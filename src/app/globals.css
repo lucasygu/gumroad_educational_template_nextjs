@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Match Gumroad's simple approach - just basic font setup */
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    /* Prevent horizontal scrolling */
+    overflow-x: hidden;
+    /* Prevent overscroll bounce effect on mobile */
+    overscroll-behavior-x: none;
+    /* Ensure proper width constraints */
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  body {
+    font-family: theme('fontFamily.primary');
+    background-color: #ffffff;
+    color: #000000;
+    /* Prevent touch actions that could cause horizontal scrolling */
+    touch-action: pan-y pinch-zoom;
+  }
+  
+  /* Gumroad's overscroll area colors */
+  html {
+    background-color: #f4f4f0; /* Light mode overscroll area */
+  }
+  
+  /* Dark mode overscroll area color */
+  @media (prefers-color-scheme: dark) {
+    html {
+      background-color: #242423; /* Dark mode overscroll area */
+    }
+  }
+}
+
+/* Essential utility classes matching Gumroad */
+.s-5 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Prevent any element from causing horizontal overflow */
+main, div, section, article {
+  max-width: 100%;
+}
+
+/* Fix for any potential horizontal scroll issues with flex containers */
+.flex, [class*="flex"] {
+  min-width: 0;
+}
