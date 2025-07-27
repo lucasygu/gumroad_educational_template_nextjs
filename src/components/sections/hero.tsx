@@ -117,7 +117,7 @@ export function Hero() {
             <Typography variant="body" className="text-black">
               Educational template{' '}
               <Link 
-                href="https://github.com/antiwork/gumroad" 
+                href="https://github.com/lucasygu/gumroad_educational_template_nextjs" 
                 className="underline hover:text-violet transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"

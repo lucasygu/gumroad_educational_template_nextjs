@@ -58,7 +58,7 @@ function GitHubStarsLink() {
 
   useEffect(() => {
     // Fetch GitHub stars count
-    fetch('https://api.github.com/repos/antiwork/gumroad')
+    fetch('https://api.github.com/repos/lucasygu/gumroad_educational_template_nextjs')
       .then(res => {
         if (!res.ok) throw new Error('Failed to fetch')
         return res.json()
@@ -75,11 +75,11 @@ function GitHubStarsLink() {
 
   return (
     <Link
-      href="https://github.com/antiwork/gumroad"
+      href="https://github.com/lucasygu/gumroad_educational_template_nextjs"
       target="_blank"
       rel="noopener noreferrer"
       className="ml-3 flex items-center gap-1.5 rounded-full p-1.5 border border-white/[.35] no-underline hover:bg-gray-700 text-white hover:-translate-x-[2px] hover:-translate-y-[2px] hover:shadow-[2px_2px_0_0_rgba(255,255,255,0.35)] transition-all duration-100"
-      aria-label="Visit Gumroad on GitHub"
+      aria-label="Visit Template Repository on GitHub"
     >
       {/* GitHub Icon */}
       <svg 

@@ -62,7 +62,7 @@ export function Footer() {
             <a href="mailto:help@template.com" className="no-underline hover:text-pink transition-colors duration-150">
               Help
             </a>
-            <a href="https://github.com/antiwork/gumroad" target="_blank" rel="noopener noreferrer" className="no-underline hover:text-pink transition-colors duration-150">
+            <a href="https://github.com/lucasygu/gumroad_educational_template_nextjs" target="_blank" rel="noopener noreferrer" className="no-underline hover:text-pink transition-colors duration-150">
               Open Source
             </a>
             <Link href="/terms" className="no-underline hover:text-pink transition-colors duration-150">
@@ -91,7 +91,7 @@ export function Footer() {
 
           {/* GitHub */}
           <a 
-            href="https://github.com/antiwork/gumroad" 
+            href="https://github.com/lucasygu/gumroad_educational_template_nextjs" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hover:text-pink transition-colors duration-150"
